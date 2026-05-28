@@ -1,0 +1,33 @@
+# Benchmark data — fetched by scripts/download_data.sh from official sources.
+# Folder structure (hybridqa/, sparta/{medical,movie,nba}/source_tables/) is kept
+# in the repo via .gitkeep so users see where downloads will land.
+/benchmark/**
+!/benchmark/
+!/benchmark/**/
+!/benchmark/**/.gitkeep
+
+# Run outputs — regenerable from the pipeline. Only the top-level out/ folder
+# is committed (via .gitkeep). All LLM/qid-specific subdirs are dynamic.
+/out/**
+!/out/
+!/out/.gitkeep
+
+# Local model cache, if you put weights under models/
+/models/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+.python-version
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+
+# Local env files (never commit secrets)
+.env
+.env.local

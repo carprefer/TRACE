@@ -1,0 +1,11 @@
+openai>=1.0
+omegaconf>=2.3
+tiktoken>=0.5
+pandas>=2.0
+numpy>=1.24
+transformers>=4.40
+# data downloader (scripts/download_data.sh) uses these
+huggingface_hub>=0.20
+pyarrow>=15
+# torch is *not* listed here -- install a CUDA-matching wheel separately
+# (see README "Setup from scratch -> 1. Python environment")
